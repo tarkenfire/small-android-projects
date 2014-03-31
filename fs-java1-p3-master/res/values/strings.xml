@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Project3</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="album_flow_label">Top Albums (Tap to view details)</string>
+    <string name="album_artist_label">Artist: </string>
+    <string name="album_name_label">Album: </string>
+    <string name="play_count_label">Playcount: </string>
+    <string name="listener_label">Listeners: </string>
+    
+    <string name="button_submit">Submit</string>
+    
+    <string name="user_hint_text">Enter a Last.fm username.</string>
+    <string name="artist_hint_text">Enter a musical artist.</string>
+    <string name="tag_hint_text">Enter a musical tag (eg. "disco")</string>
+    
+    <string name="uid_base">Top albums for user </string>
+    <string name="artist_base">Top albums for artist </string>
+    <string name="tag_base">Top albums for tag </string>
+    
+    <string name="error_blank_entry">Entry field must not be left blank.</string>
+    <string name="error_no_connection">No internet connection. Check your settings and try again.</string>
+    <string name="error_unknown">Unknown Error</string>
+    <string name="error_no_results">No results were found. Check your spelling and try again.</string>
+</resources>

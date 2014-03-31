@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E5CFCC" >
+    
+    <Button 
+        android:id="@+id/button_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/button_share"
+        android:onClick="onClick"
+        />
+    
+    <ImageView 
+        android:id="@+id/image_album_art"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:paddingTop="10dp"
+        android:contentDescription="@string/access"
+        />
+    
+    <TextView 
+        android:id="@+id/text_view_detail_album_name"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        
+        />
+    <TextView 
+        android:id="@+id/text_view_detail_artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="18sp"
+        />
+    
+    <TextView
+        android:id="@+id/text_view_summary_label" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_summary_label"
+        android:paddingLeft="10dp"
+        />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView 
+            android:id="@+id/text_view_album_summary"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+             />
+    </ScrollView>
+
+</LinearLayout>

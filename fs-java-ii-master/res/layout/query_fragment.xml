@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".AlbumView"
+    android:background="#E5CFCC" >
+
+    
+    <RelativeLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+            
+	    <EditText
+	        android:id="@+id/edit_text_entry_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/hint_artist"
+	        android:inputType="text"
+	        android:imeOptions="actionSearch"
+	         />
+	    <Spinner
+	        android:id="@+id/spinner_mode_select"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/edit_text_entry_field"
+	        android:layout_alignLeft="@id/edit_text_entry_field"
+	         />
+	    <Button
+	        android:id="@+id/button_submit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/edit_text_entry_field"
+	        android:layout_alignRight="@id/edit_text_entry_field"
+	        android:text="@string/button_submit"
+	         />
+        
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:id="@+id/filter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        >
+	    
+	    <EditText 
+	        android:id="@+id/edit_text_filter_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/hint_filter"
+	        android:inputType="text"
+	        android:imeOptions="actionSearch"
+	        
+	        />
+	    <Button 
+	        android:id="@+id/button_back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/edit_text_filter_field"
+	        android:layout_alignLeft="@id/edit_text_filter_field"
+	        android:text="@string/button_back"
+	        android:onClick="onClick"
+	        />
+	    <Button
+	       	android:id="@+id/button_clear_filter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/edit_text_filter_field"
+	        android:layout_toRightOf="@id/button_back"
+	        android:text="@string/button_filter_clear"
+	        android:onClick="onClick"
+	         />
+	    
+	    <Button
+	        android:id="@+id/button_filter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/edit_text_filter_field"
+	        android:layout_toRightOf="@id/button_clear_filter"
+	        android:text="@string/button_filter"
+	        android:onClick="onClick"
+	         />    
+    </RelativeLayout>
+
+
+    <LinearLayout
+        	android:id="@+id/display_header"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:visibility="gone"
+        	android:layout_marginTop="10dp"
+        	android:layout_below="@id/filter_container"
+        	android:background="#000000"
+        >
+       	<TextView 
+       	    android:id="@+id/header_album_name_label"
+       	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight=".5"
+        	android:paddingLeft="5dp"
+        	android:text="@string/label_album_name"
+        	android:textColor="#FFFFFF"/>
+       	
+       	<TextView 
+       	    android:id="@+id/header_album_artist_label"
+       	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight=".5"
+        	android:text="@string/label_artist_name"
+        	android:textColor="#FFFFFF"/>
+       	
+	</LinearLayout>
+			
+	<ListView 
+	    android:id="@+id/list_view_display_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/display_header"
+	    android:visibility="gone"
+    >
+	</ListView>
+						
+	<TextView 
+	    android:id="@+id/text_view_instructions"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/search_container"
+	    android:text="@string/instructions"
+	    android:maxLines="10"
+    	android:lines="10"
+    	android:textSize="20sp"
+    	android:layout_marginTop="10dp"
+	    />	
+	
+</RelativeLayout>

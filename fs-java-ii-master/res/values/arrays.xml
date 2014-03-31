@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_choices">
+        <item>User Name</item>
+        <item>Artist Name</item>
+        <item>Tag Name</item>
+    </string-array>
+    
+</resources>
